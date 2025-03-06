@@ -39,7 +39,7 @@ function App() {
   function send()
   {
     setstatus(true)
-    axios.post("bulkmail-backend-coral.vercel.app/sendemail",{msg:msg,emaillist:emaillist})
+    axios.post("https://bulkmail-frontend-ten.vercel.app/sendemail",{msg:msg,emaillist:emaillist})
     .then(function(data)
     {
        if(data.data === true)
